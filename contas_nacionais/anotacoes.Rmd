@@ -51,6 +51,8 @@ knitr::include_graphics("exogenos/figura_1_fluxo_circular_da_renda.png")
     
 3. **PIB per capita**: é a divisão do PIB do ano corrente pela pela **população residente** no mesmo período.
 
+$$PPC = \frac{PIB_t}{PR_t}$$
+
 4. **Renda Nacional**: é o agregado que considera o **valor adicionado** gerado pelos fatores de produção de **propriedade de residentes**.
 
 5. **Renda Nacional Bruta (RNB)**: é a Renda Nacional subtraída da **Renda Líquida Enviada ao Exterior (RLEE)**. Há também a contraparte, isto é, a **Renda Líquida Recebida do Exterior (RLRE)**.
@@ -68,7 +70,7 @@ $RDB = RNB + TUR$, em que $RDB = C + S_d$
 \end{center}
 
 
-Onde: $C$ = Consumo e $S_d$ = Poupança Doméstica.
+&emsp;&emsp; Onde: $C$ = Consumo e $S_d$ = Poupança Doméstica.
 
 \begin{center}
 $RNB = RDB - TUR \rightarrow PIB = RDB + RLEE - Saldo_{TUR}$
@@ -83,3 +85,123 @@ $$RPD = RDB - RLG \rightarrow RLG = RDB - RPD$$
 \begin{center}
 $PIL = PIB$ - Depreciação
 \end{center}
+
+9. **PIB Real (a preços constantes)**
+    + *(i)* valores correntes: aqueles medidos a preços médios do período considerado;
+    + *(i)* valores constantes: aqueles medidos a preços médios de determinado período.
+    
+&emsp;&emsp; Para sabermos se o país está mais rico, o que importa é o volume de produção.
+
+10. **Taxa de Variação do Índice de Volume**
+
+$$\Delta_{volume} = \frac{PIBR_{t-1}}{PIB_{t-1}} * 100$$
+&emsp;&emsp; Onde:
+
+&emsp;&emsp; $PIBR_{t-1}$: PIB do ano corrente (*t*) à preços do ano anterior
+
+&emsp;&emsp; $PIB_{t-1}$: PIB do ano anterior (*t-1*)
+
+11. **Taxa de Variação do Deflator do PIB**
+
+$$\Delta_{deflator} = \frac{PIB_{t-1}}{PIBR_t} * 100$$
+
+12. **PIB Potencial e Hiato do Produto**
+    + *(i)* produto potencial consiste em uma estimativa do nível do PIB, considerando que a economia esteja operando em seu potencial máximo;
+    + *(ii)* a diferença entre o produto potencial e o produto efetivo é conhecido como hiato do produto.
+    
+$$PIB_{hiato} = Y - Y^*$$
+
+# Identidades macroeconômicas 
+
+1. **Economia fechada e sem governo**
+
+&emsp;&emsp; Pela ótica da despesa $\rightarrow Y_p = C + I_{pr}$
+
+&emsp;&emsp; Pela ótica da renda $\rightarrow Y_p = C + S_p$
+
+&emsp;&emsp; **Onde**: $Y_p$ é o produto privado, $I_{pr}$ é o investimento privado e $S_p$ é a poupança privada.
+
+&emsp;&emsp; Igualando $Y_p$, temos $C + S_p = C + I_{pr} \rightarrow S_p = I_{pr}$. Isto é, em uma economia fechada e sem governo, o investimento privado é igual à poupança privada.
+
+2. **Economia fechada e com governo**
+
+$$RDB = RPD + RLG$$
+
+&emsp;&emsp; Pela ótica da despesa $\rightarrow Y_N = C + I + G$
+
+&emsp;&emsp; Pela ótica da renda $\rightarrow Y_N = C + S + RLG$
+
+&emsp;&emsp; Igualando $Y_N$, temos $C + I + G = C + S + RLG \rightarrow I = S + (RLG - G) \rightarrow I = S + S_g$
+
+&emsp;&emsp; **Onde**: $Y_N$ é a RDB, e $I$ é a soma da poupança privada com a poupança do governo (gastos com investimento público e privado).
+
+Como parte dos investimentos são feitos pelo governo, para saber o déficit público, precisamos distinguir o investimento público do privado.
+
+&emsp;&emsp; Se *(i)* $S_g > I_g \rightarrow$ superávit;
+
+&emsp;&emsp; Se *(i)* $S_g < I_g \rightarrow$ déficit.
+
+É possível termos um superávit com uma $S_g$ negativa, pois deve-se olhar também para o investimento.
+
+
+**Exemplo 1**: se a $RLG < G \rightarrow S = I + (G - RLG)^+ \rightarrow S_p > I \rightarrow$ parte da poupança privada financia gastos do governo.
+
+**Exemplo 2**: se a $RLG > G \rightarrow S = I + (G - RLG)^- \rightarrow I > Sp$
+
+3. **Economia aberta e com governo**
+
+$$RNB = PIB - RLEE$$
+
+$$RDB = RNB + TUR$$
+
+$$RDB = RPD + RLG$$
+
+$$RDB = (PIB - RLEE) + TUR$$
+
+$$PIB = RDB + RLEE - TUR$$
+
+&emsp;&emsp; Pela ótica da despesa $\rightarrow Y = C + I + G + (X_{NF} - M_{NF})$
+
+&emsp;&emsp; **Onde**: $NF$ são não-fatores de produção. $X$ e $M$ são exportações e importações, respectivamente.
+
+$$RDB + RLEE - TUR = C + I + G + (X_{NF} - M_{NF})$$
+
+$$RDB = C + I + G + (X_{NF} - M_{NF}) - RLEE + TUR$$
+
+&emsp;&emsp; Pela ótica da renda $\rightarrow Y = C + S + RLG + [RLEE - TUR]$
+
+&emsp;&emsp; Igualando $Y$, temos $C + I + G + (X_{NF} - M_{NF}) = C + S + RLG + RLEE - TUR$
+
+$$I - S + G - RLG = RLEE - TUR + (M_{NF} - X_{NF})$$
+
+&emsp;&emsp; Definindo a poupança externa como $S_{ext} = (M_{NF} - X_{NF}) + RLEE - TUR$. 
+
+&emsp;&emsp; Observações:
+
+&emsp;&emsp;  $S_{ext} > 0 \rightarrow$ país produz mais do que consome.
+
+&emsp;&emsp;  $S_{ext}$ é também o saldo do balanço de pagamentos em transações correntes com o sinal invertido $\rightarrow S_{ext} = - TC$
+
+$$I = S + [RLG - G] + [(M_{NF} - X_{NF}) + RLEE - TUR] \rightarrow I = S_g + S_{ext}$$
+
+&emsp;&emsp; Temos também que o investimento (formação bruta de capital) é a soma da formação bruta de capital fixo somado à variação dos estoques: 
+
+$$I = FBKF + \Delta_{estoques}$$
+
+&emsp;&emsp; Além disso, temos a relação PIB a custo de fatores vs. PIB a preços de mercado, onde $II$ são os investimentos indiretos: 
+
+$$PIB_{PM} = PIB_{CF} + II + subsidios$$
+
+&emsp;&emsp; Em relação à poupança doméstica, temos:
+
+\begin{center}
+$S_d = S + S_g$, logo $\rightarrow I = S_d + S_{ext}$ ou $S_d = I - S_{ext} \rightarrow S_d = I + TC$.
+\end{center}
+
+4. **Em uma economia aberta**
+
+$$Y = C + I + G + (X-M)$$
+
+&emsp;&emsp; Subtraindo $T$ de ambos os lados::
+
+$$Y - T = C + I + G - T + (X - M)$$
